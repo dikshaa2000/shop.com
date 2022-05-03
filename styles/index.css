@@ -1,0 +1,159 @@
+#first{
+    height: 35px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #202340;
+    color: white;
+    margin: auto;
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+#first>p{
+    margin: auto;
+    margin-left: 500px;
+    margin-top: 5px;
+}
+#second{
+    height: 60px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: #f0f1f7;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#img1{
+    height: 40px;
+    width: 200px;
+    /* margin-top: 15px; */
+}
+#two{
+   height: 50%;
+   width: 3%;
+   border: 1px solid black;
+   
+}
+#one{
+    height: 75%;
+    width: 40%;
+    margin-top: 5px;
+  margin-left: 120px;
+    border-radius: 30px;
+    display: flex;
+    border :1px solid #202340;
+    background-color: white;
+ }
+ #one1{
+     height: 100%;
+     width: 25%;
+     border-right:1px solid black ;
+
+     /* border: 1px solid red; */
+    
+ }
+ #select{
+     height: 100%;
+     width: 100%;
+     border-radius:30px;
+     border: 0px;
+
+ }
+#search{
+    height: 90%;
+     width: 65%;
+     /* border: 1px solid red; */
+}
+#search1{
+    height: 100%;
+     width: 97%;
+     border: 0px;
+}
+#icon{
+    height: 100%;
+    width: 20%;
+   
+/* border: 1px solid black; */
+
+
+    /* border: 1px solid red; */
+}
+ #icon>button>i{
+   
+    color:white
+    
+}
+#icon>button{
+    height: 100%;
+    width: 100%;
+    background-color: #202340;
+    border-radius: 0px 30px 30px 0px;
+    
+}
+#three{
+    height: 100%;
+    width: 20%;
+    margin-left: 200px;
+  
+}
+
+#third{
+    height: 60px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: auto;
+    background-color: #f0f1f7;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #202340;
+}
+#threeTwo{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #202340;
+}
+#threeTH{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 30%;
+    /* border: 1px solid grey; */
+    margin-left: 100px;
+
+}
+#ek{
+    display: flex;
+    justify-content: space-evenly;
+}
+#ek1{
+    height: 30px;
+    width: 30px;
+}
+#do{
+    display: flex;
+    justify-content: space-evenly;
+}
+#do1{
+    height: 30px;
+    width: 30px;
+   
+}
+#teen{
+    display: flex;
+    justify-content: space-evenly;
+}
+#teen1{
+    height: 30px;
+    width: 30px;
+}
+#threeOne{
+    height: 100%;
+    width: 20%;
+}
