@@ -118,6 +118,72 @@ body {
     height: 40px;
     vertical-align: middle;
 }
+/* SIGNIN DIV */
+/*sign-div*/
+#sign-div{
+    margin: 0;
+    width: 23%;
+    height: 100vh;
+    /* padding:20px; */
+    background-color: white;
+    /* position: relative; */
+    position: fixed;
+    top:0;
+    right:0;
+    overflow: auto;
+    font-size: 14px;
+    /* line-height: 1.6; */
+    z-index: 6;
+    display: none;
+
+}
+#sign-div .menu-head{
+    font-weight: 700;
+    font-size: 22px;
+    padding: 5px 20px 25px;
+}
+
+#sign-div .menu-subhead{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 13px 20px;
+    margin:0;
+    border-top: 1px solid #d4d4d4;
+}
+#sign-div>p, #category-div-1>p, #navbar-div p {
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#sign-div .category-links, #category-div-1 .category-links {
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sign-div .category-links p, #category-div-1 .category-links p {
+    margin: 0;
+}
+
+#sign-div .category-links:hover, #category-div-1 .category-links:hover {
+    background-color: #d4d4d4;
+    color: #00a8ca;
+}
+
+#sign-div>p:hover, #category-div-1>p:hover{
+    background-color: #d4d4d4;
+    color: #00a8ca;
+}
+
+#sign-div #shop-logo, #category-div-1 #shop-logo {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
 /* NAVBAR */
 #first{
     width: 100%;
