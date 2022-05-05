@@ -22,6 +22,12 @@ body {
 #header-div .cross-div:hover {
     opacity: 0.5;
 }
+#header-div #cross-result{
+    top: 5px;
+    right: 20%;
+    border: 0;
+    display:none;
+}
 #category-div{
     margin: 0;
     width: 23%;
