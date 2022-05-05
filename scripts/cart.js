@@ -1,26 +1,14 @@
 
-let url = `https://fakestoreapi.com/products`
-fetch(url)
-.then(function(res){
-    return res.json();
-})
-.then(function(res){
-    console.log("res", res)
-    localStorage.setItem("productData",JSON.stringify(res)) //set the data in local storage
-}).catch(function(err){
-    console.log("err", err)
-})
-
-let data = JSON.parse(localStorage.getItem("productData")) //took the data from the localSt
+let data = JSON.parse(localStorage.getItem("ProductInCart"))
 console.log(data)
 
-let totPRice = 0 //added the total price here
+let totPRice = 0
 
-data.forEach(({image, price, title},elem,index)=>{ //mapping threough the data
+data.forEach(({image, price, title},elem,index)=>{
     
-    totPRice=totPRice+Number(price)//adding the totap price
+    totPRice=totPRice+Number(price)
     // console.log(description)
-    localStorage.setItem("Total Price", JSON.stringify(totPRice))//storing the total price
+    localStorage.setItem("Total Price", JSON.stringify(totPRice))
     let ds = document.getElementById("leftbox1")
     let details = document.createElement("div")
     details.setAttribute("id", "left1")
@@ -62,7 +50,7 @@ data.forEach(({image, price, title},elem,index)=>{ //mapping threough the data
     let remove= document.createElement("button")
     remove.innerText="Remove"
 
-    remove.addEventListener("click", function(){ //addred click function to remove button
+    remove.addEventListener("click", function(){
         removeItem(elem, index)
     });
     btSandR.append(save, remove)
@@ -73,7 +61,7 @@ data.forEach(({image, price, title},elem,index)=>{ //mapping threough the data
     // let totalPrice = docu
 })
 
-function removeItem(elem, index){ //remove button functionality
+function removeItem(elem, index){
     console.log(elem, index)
     data.splice(index, 1);
     localStorage.setItem("productData", JSON.stringify(data))

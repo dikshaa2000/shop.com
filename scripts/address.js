@@ -14,32 +14,11 @@ botTOT.style.fontWeight = "bold"
 
 //Getting data from - form
 
-// document.querySelector("form").addEventListener("submit", formfn)
-// var ressDetails = JSON.parse(localStorage.getItem("addressDetails")) || []
-
-// function formfn(){
-//     event.preventDefault()
-
-//     var dataaa = {
-        // name1: document.getElementById("name").value,
-        // surname1: document.getElementById("surname").value,
-        // address1: document.getElementById("address").value,
-        // zipcode1: document.getElementById("zpcode").value,
-        // city1: document.getElementById("city").value,
-        // phoneNumber1: document.getElementById("phno").value,
-//     }
-    
-//     console.log("adadad", dataaa)
-//     ressDetails.push(dataaa)
-//     localStorage.setItem("addressDetails", JSON.stringify(data))
-//     }
-
 document.querySelector("form").addEventListener("submit", formFN);
-  
-var addressData = JSON.parse(localStorage.getItem("adddetails"))||[]
+
 function formFN() {
   event.preventDefault();
-
+  let addressData = [];
   var data = {
         name1: document.getElementById("name").value,
         surname1: document.getElementById("surname").value,
@@ -50,7 +29,9 @@ function formFN() {
   };
   console.log(data);
   addressData.push(data);
-  localStorage.setItem("adddetails",JSON.stringify(data))
+  localStorage.setItem("adddetails",JSON.stringify(addressData))
+
+  alert("Address Details have been saved")
 
 }
 
