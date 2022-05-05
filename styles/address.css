@@ -1,0 +1,120 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: #202340;
+    margin: 0;
+}
+#mainBody{
+    margin: auto;
+    width: 70%;
+}
+#check_Total{
+    display: flex;
+    justify-content: space-between;
+}
+#CkDownBtn{
+    /* margin-bottom: 10px; */
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+#CkDownBtn button{
+    margin-bottom: 20px;
+    height: 38px;
+    width: 10%;
+    background-color: whitesmoke;
+    color: #202340;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#CkDownBtn button:nth-child(1){
+    background-color: #414467;
+    color: white;
+}
+#submain{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+input{
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid #202340 ;
+    height: 25px;
+    border-radius: 2px;
+}
+#left{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+.Inpname{
+    display: flex;
+    gap: 40px;
+}
+#address{
+    width: 70%;
+}
+#od{
+    margin-bottom: 10px;
+}
+#odTotal{
+    border-top: 1px solid rgb(184, 184, 184);
+    display: flex;
+    justify-content: space-between;
+}
+#submit{
+    width: 30%;
+    background-color: #202340;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+#right{
+    width: 40%;
+}
+#right button{
+    height: 38px;
+    width: 100%;
+    background-color: #414467;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+#kachra{
+    width: 90%;
+    font-size: 13px;
+}
+#right a{
+    color: #202340;
+}
+#conCheck{
+    cursor: pointer;
+}
+#fback{
+    background-color: whitesmoke;
+    /* height: 10px; */
+    padding: 10px 10px;
+    font-size: 12px;
+}
+#cart_footer{
+    font-size: 12px;
+    background-color: #f0f1f7;
+    border-top: 1px solid #202340;
+    margin-top: 100px;
+    height: 60px;
+    padding: 10px 10px;
+    
+}
+#atags{
+    display: block;
+    display: flex;
+    gap: 10px;
+
+}
+#atags a{
+    color: #202340;
+}
