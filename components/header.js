@@ -203,33 +203,33 @@ function header(){
         <p id="back-clothing" class="back"><i class="fa-solid fa-angle-left"></i> Back to main</p>
         <h1 class="menu-head">Clothes</h1>
         <h3 class="menu-subhead">Shop All Clothes</h3>
-        <div class="category-links">
+        <div id="sweater" class="category-links">
             <div>
-                <p>Women's Clothing</p>
+                <p>Sweater</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div id="mens-clothing" class="category-links">
+        <div id="top-blouses" class="category-links">
             <div>
-                <p>Men's Clothing</p>
+                <p>Blouses</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div id="jeans" class="category-links">
             <div>
-                <p>Accessories</p>
+                <p>Jeans</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div id="activewear" class="category-links">
             <div>
-                <p>Girl's Clothing</p>
+                <p>Activewear</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div id="dress" class="category-links">
             <div>
-                <p>Boy's Clothing</p>
+                <p>Dress</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>

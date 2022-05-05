@@ -6,7 +6,11 @@ import footer from "../components/footer.js";
 document.querySelector("#footer-import-div").innerHTML=footer();
 
 let clothes = document.querySelector("#clothes");
-let mensCloth = document.querySelector("#mens-clothing");
+let sweater = document.querySelector("#sweater");
+let blouse = document.querySelector("#top-blouses");
+let jeans = document.querySelector("#jeans");
+let activewear = document.querySelector("#activewear");
+let dress = document.querySelector("#dress");
 let back = document.querySelector("#back-clothing");
 let catDiv = document.querySelector("#category-div");
 let clothesDiv = document.querySelector("#category-div-1");
@@ -49,7 +53,7 @@ function closeResult(){
     crossResult.style.display="none";
 }
 
-// FUNCTION TO SHOW SIGNIN
+// FUNCTION TO SHOW SIGNIN MENU
 signin.onclick=function(){
     showSignin();
 }
@@ -57,7 +61,7 @@ function showSignin(){
     signDiv.style.display="block";
 }
 
-// FUNCTION TO CLOSE SIGNIN
+// FUNCTION TO CLOSE SIGNIN 
 crossSign.onclick=function(){
     closeSign();
 }
@@ -65,7 +69,7 @@ function closeSign(){
     signDiv.style.display="none";
    
 }
-// FUNCTION TO SHOW CATEGORY MENU 
+// FUNCTION TO SHOW CATEGORY MENU
 category.onclick = function () {
     showCategory();
 }
@@ -73,31 +77,28 @@ category.onclick = function () {
 function showCategory() {
     catDiv.style.display = "block";
 }
+
 // FUNCTION TO SHOW MENSCLOTHING
-mensCloth.onclick=function(){
-    searchMensCloth();
+sweater.onclick=function(){
+    searchCloth(event);
 }
-
-async function searchMensCloth(){
-    try{
-        let res=await fetch(`https://apidojo-forever21-v1.p.rapidapi.com/products/v2/list?category=mens%20clothing&pageSize=48&pageNumber=1&sortby=0`,{
-            method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'apidojo-forever21-v1.p.rapidapi.com',
-		'X-RapidAPI-Key': '181e29eba9msh74c58b902b13769p14cfdfjsndb3faaa286c2'
-	}
-        })
-
-        let data=await res.json();
-        data=data.CatalogProducts;
-        console.log(data);
-        localStorage.setItem("Selected_category",JSON.stringify(data));
-        //window.location.href="";
-
-    }
-    catch(err){
-        console.log(err);
-    }
+blouse.onclick=function(){
+    searchCloth(event);
+}
+jeans.onclick=function(){
+    searchCloth(event);
+}
+activewear.onclick=function(){
+    searchCloth(event);
+}
+dress.onclick=function(){
+    searchCloth(event);
+}
+function searchCloth(event){
+    let cat=event.target.id;
+    console.log(event.target.id);
+    localStorage.setItem("Selected_category",cat)
+    // window.location.href="#";
 }
 
 // FUNCITON TO HIDE CATEGORY MENU
