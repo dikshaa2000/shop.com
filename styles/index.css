@@ -209,6 +209,7 @@ body {
 #second{
     height: 60px;
     width: 100%;
+    padding:10px 20px 0; 
     /* border: 1px solid black; */
     display: flex;
     background-color: #f0f1f7;
@@ -217,7 +218,7 @@ body {
     box-sizing: border-box;
 }
 #img1{
-    height: 40px;
+    height: 100%;
     width: 200px;
     /* margin-top: 15px; */
 }
@@ -228,10 +229,10 @@ body {
 
 }
 #one{
-    height: 75%;
-    width: 40%;
+    height: 80%;
+    width: 60%;
     margin-top: 5px;
-  margin-left: 120px;
+    margin-left: 120px;
     border-radius: 30px;
     display: flex;
     border :1px solid #202340;
@@ -240,7 +241,7 @@ body {
  }
  #one1{
      height: 100%;
-     width: 25%;
+     width: 30%;
      border-right:1px solid black ;
 
      /* border: 1px solid red; */
@@ -259,6 +260,7 @@ body {
      /* border: 1px solid red; */
      /* position:relative */
 }
+
 #search1{
     height: 100%;
      width: 97%;
@@ -361,25 +363,40 @@ body {
     border-radius: 0px 30px 30px 0px;
     border:0;
 }
+@media screen and (max-width: 1024px){
+    #one{
+        width: 80%
+    }
+    
+}
 #three{
     height: 100%;
-    width: 20%;
+    width: 25%;
     margin-left: 200px;
 
 }
+#three img{
+    width:100%;
+    height: 100%;
+}
 
 #third{
-
     width: 100%;
     /* border: 1px solid black; */
+    padding:10px 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:0;
     background-color: #f0f1f7;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #202340;
     box-sizing: border-box;
+    white-space: nowrap;
+}
+#threeOne p{
+    padding:0;
 }
 #third p{
     cursor: pointer;
@@ -387,26 +404,37 @@ body {
 #third p:hover{
 color:#00a8ca;
 }
+/* #threeOne{
+    height: 100%;
+} */
 #threeTwo{
     /* border: 1px solid black; */
     display: flex;
-    justify-content: center;
-    gap:14px;
+    margin-left: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
     color: #202340;
 }
 
 #threeTwo p{
-padding:0;
+    /* height:20px; */
+    padding:0;
 }
 #threeTH{
+    
     display: flex;
-    justify-content: space-evenly;
-    width: 30%;
+    justify-content: flex-start;
+    /* width: 30%; */
+    gap:25px;
     /* border: 1px solid grey; */
     margin-left: 100px;
 
 }
-#ek{
+#threeTH p{
+    padding:0 ;
+}
+/* #ek{
     display: flex;
     justify-content: space-evenly;
 }
@@ -430,11 +458,8 @@ padding:0;
 #teen1{
     height: 30px;
     width: 30px;
-}
-#threeOne{
-    height: 100%;
-    width: 20%;
-}
+} */
+
 #navbar-div{
     margin:0;
     width:100%;

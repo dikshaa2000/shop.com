@@ -54,6 +54,7 @@ function header(){
         </div>
 
         <div id="third">
+        
             <div id="threeOne">
                 <p id="category"><i class="fa-solid fa-list fa-xl"></i> Categories</p>
             </div>
@@ -84,13 +85,13 @@ function header(){
 
             <div id="threeTH">
                 <div id="ek">
-                    <p id="Signin"> <i class="fa-solid fa-user fa-xl"></i>Sign in</p>
+                    <p id="Signin"> <i class="fa-solid fa-user fa-xl"></i> Sign in</p>
                 </div>
                 <div id="do">
-                    <p> <i class="fa-solid fa-arrow-rotate-right fa-xl"></i>Orders</p>
+                    <p> <i class="fa-solid fa-rotate-left fa-xl"></i> Orders</p>
                 </div>
                 <div id="teen">
-                    <p><i class="fa-solid fa-cart-shopping fa-xl"></i>Cart</p>
+                    <p><i class="fa-solid fa-cart-shopping fa-xl"></i> Cart</p>
                 </div>
             </div>
         </div>
