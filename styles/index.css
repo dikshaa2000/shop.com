@@ -157,3 +157,43 @@
     height: 100%;
     width: 20%;
 }
+.main-box{
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+background-color: aqua;
+}
+.main-box .sidebar_menu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    background-color: aqua;
+
+}
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+  
+}
+.sidebar_menu .logo a{
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+.sidebar_menu .menu i{
+    font-size: 20px;
+}
