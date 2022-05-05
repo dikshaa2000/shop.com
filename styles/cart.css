@@ -19,13 +19,15 @@ body{
     margin-bottom: 10px;
     
 }
-#box {
+#box {   /* main body inside it left and right */
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
     padding: 10px 10px;
 }
+
+/*start of left CSS*/
 #left{
     /* border: 1px solid red; */
     width: 60%;
@@ -90,6 +92,9 @@ body{
     justify-content: right;
     gap: 20%;
 }
+
+/*end of left CSS*/
+
 #right{
     /* border: 1px solid blue; */
     width: 40%;
