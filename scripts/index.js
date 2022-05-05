@@ -1,5 +1,6 @@
 
 let clothes = document.querySelector("#clothes");
+let mensCloth = document.querySelector("#mens-clothing");
 let back = document.querySelector("#back-clothing");
 let catDiv = document.querySelector("#category-div");
 let clothesDiv = document.querySelector("#category-div-1");
@@ -8,8 +9,28 @@ let crossCat = document.querySelector("#cross-category");
 let crossCloth = document.querySelector("#cross-clothing");
 let search = document.querySelector("#search1");
 let searchDiv = document.querySelector("#search-result-div");
+// FOR SIGNIN DIV
+let crossSign=document.querySelector("#cross-sign");
+let signDiv=document.querySelector("#sign-div");
+let signin=document.querySelector("#Signin")
 let id;
 
+// FUNCTION TO SHOW SIGNIN
+signin.onclick=function(){
+    showSignin();
+}
+function showSignin(){
+    signDiv.style.display="block";
+}
+
+// FUNCTION TO CLOSE SIGNIN
+crossSign.onclick=function(){
+    closeSign();
+}
+function closeSign(){
+    signDiv.style.display="none";
+   
+}
 // FUNCTION TO SHOW CATEGORY MENU 
 category.onclick = function () {
     showCategory();
@@ -17,6 +38,27 @@ category.onclick = function () {
 
 function showCategory() {
     catDiv.style.display = "block";
+}
+// FUNCTION TO SHOW MENSCLOTHING
+mensCloth.onclick=function(){
+    searchMensCloth();
+}
+
+async function searchMensCloth(){
+    try{
+        let res=await fetch(`https://apidojo-forever21-v1.p.rapidapi.com/products/v2/list?category=mens%20clothing&pageSize=48&pageNumber=1&sortby=0`,{
+            method: 'GET',
+	headers: {
+		'X-RapidAPI-Host': 'apidojo-forever21-v1.p.rapidapi.com',
+		'X-RapidAPI-Key': '181e29eba9msh74c58b902b13769p14cfdfjsndb3faaa286c2'
+	}
+        })
+
+        let data=await res.json();
+        console.log(data);
+
+    }
+    catch{}
 }
 
 // FUNCITON TO HIDE CATEGORY MENU
