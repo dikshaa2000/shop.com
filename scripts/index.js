@@ -7,13 +7,41 @@ let clothesDiv = document.querySelector("#category-div-1");
 let category = document.querySelector("#category");
 let crossCat = document.querySelector("#cross-category");
 let crossCloth = document.querySelector("#cross-clothing");
+let crossResult = document.querySelector("#cross-result");
 let search = document.querySelector("#search1");
 let searchDiv = document.querySelector("#search-result-div");
 // FOR SIGNIN DIV
 let crossSign=document.querySelector("#cross-sign");
 let signDiv=document.querySelector("#sign-div");
 let signin=document.querySelector("#Signin")
+let signLink=document.querySelector("#signin-link");
+let registerLink=document.querySelector("#register-link");
 let id;
+
+// FUNCTION TO REDIRECT TO SIGNIN PAGE
+signLink.onclick=function(){
+    tosignin();
+}
+function tosignin(){
+    window.location.href="#";
+}
+
+// FUNCTION TO REDIRECT TO REGISTER PAGE
+registerLink.onclick=function(){
+    toregister();
+}
+function toregister(){
+    window.location.href="#";
+}
+
+// FUNCTION FOR CROSS_RESULT
+crossResult.onclick=function(){
+    closeResult();
+}
+function closeResult(){
+    searchDiv.style.display="none";
+    crossResult.style.display="none";
+}
 
 // FUNCTION TO SHOW SIGNIN
 signin.onclick=function(){
@@ -55,10 +83,15 @@ async function searchMensCloth(){
         })
 
         let data=await res.json();
+        data=data.CatalogProducts;
         console.log(data);
+        localStorage.setItem("Selected_category",JSON.stringify(data));
+        //window.location.href="";
 
     }
-    catch{}
+    catch(err){
+        console.log(err);
+    }
 }
 
 // FUNCITON TO HIDE CATEGORY MENU
@@ -141,6 +174,7 @@ function showFunc(data1,data2) {
 
     searchDiv.innerHTML = null;
     searchDiv.style.display = "flex";
+    crossResult.style.display="block";
     let  divL=document.createElement("div");
     let Sugg=document.createElement("p");
     Sugg.setAttribute("class","search-subtitle");
@@ -219,7 +253,7 @@ function debounce(func, delay) {
 function searchProduct(el) {
     let arr = [];
     arr.push(el);
-    localStorage.setItem("search", JSON.stringify(arr));
+    localStorage.setItem("Searched_category", JSON.stringify(arr));
     //window.location.href = ""
 }
 
