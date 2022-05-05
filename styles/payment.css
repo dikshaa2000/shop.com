@@ -1,0 +1,226 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: #202340;
+    margin: 0;
+}
+
+.mainbody{
+    margin: auto;
+    width: 90%;
+}
+#subMain{
+    display: flex;
+    margin: auto;
+    gap: 40px;
+    
+}
+#check_Total{
+    display: flex;
+    justify-content: space-between;
+}
+#CkDownBtn{
+    /* margin-bottom: 10px; */
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+#CkDownBtn button{
+    margin-bottom: 20px;
+    height: 38px;
+    width: 10%;
+    background-color: whitesmoke;
+    color: #202340;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#CkDownBtn button:nth-child(3){
+    background-color: #414467;
+    color: white;
+}
+#im2{
+    width: 150px;
+    height: 50px;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(192, 192, 192);
+}
+#im3{
+    width: 200px;
+
+
+}
+#left{
+    width: 60%;
+}
+#kachra1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#im4{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    
+}
+#selectPay{
+    border: none;
+}
+#paymentW{
+    
+    margin-top: 10px;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+#paymentW input{
+    width: 20%;
+}
+#inpSpan input{
+    width: 3%;
+}
+.jaadu{
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+#kachra1 div{
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-left: 30px;
+}
+#innerBox1{
+    background-color: whitesmoke;
+    padding: 10px 10px;
+    height: 60%;
+}
+#inbox2{
+    margin-top: 20px;
+    border-top: 1px solid rgb(185, 185, 185) ;
+    display: flex;
+    gap: 20px;
+}
+#inp{
+    height: 30px;
+    font-size: 15px;
+    font-style: italic;
+    color: #414467;
+    border: 1px solid #202340;
+}
+#box2 button{
+    height: 30px;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: #202340;
+    background-color: white;
+    border: 1px solid #202340;
+}
+#pin{
+    width: 40px;
+    height: 30px;
+    font-size: 15px;
+    font-style: italic;
+    color: #414467;
+    border: 1px solid #202340;
+}
+#right{
+    width: 35%;
+}
+#right button{
+    height: 38px;
+    width: 100%;
+    background-color: #414467;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+#right a{
+    color: #202340;
+}
+#placeOrder button{
+    width: 40%;
+    cursor: pointer;
+}
+#fback{
+    background-color: whitesmoke;
+    /* height: 10px; */
+    padding: 10px 10px;
+    font-size: 12px;
+}
+#cart_footer{
+    font-size: 12px;
+    background-color: #f0f1f7;
+    border-top: 1px solid #202340;
+    margin-top: 100px;
+    height: 60px;
+    padding: 10px 10px;
+    
+}
+#atags{
+    display: block;
+    display: flex;
+    gap: 10px;
+
+}
+#atags a{
+    color: #202340;
+}
+#subTotal{
+    
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+}
+#odTotal{
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+#placeOrder{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#od{
+    
+    margin-bottom: 5px ;
+    border-bottom: 1px solid #202340;
+}
+#itotalN p{
+    margin-bottom: -10px;
+}
+#itotalV p{
+    margin-bottom: -10px;
+}
+#kachraBox{
+    background-color: whitesmoke;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+#kachraBox p{
+    font-size: 14px;
+}
+#kboxInput{
+    height: 35px;
+    width: 90%;
+    font-style: italic;
+}
+#inbox2{
+    font-size: 15px;
+    padding: 10px 10px ;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 10px 10px;
+}
+#navbar img{
+    height: 200px;
+    width: 200px;
+    margin-top: -5%;
+    margin-bottom: -5%;
+}

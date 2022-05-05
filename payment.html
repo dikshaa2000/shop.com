@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/payment.css">
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+        <a href="index.html"> Continue Shopping</a>
+    </div>
+    <div class="mainbody">
+        <div id="check_Total">
+            <h1>Checkout</h1>
+            <p id="Total_check"></p>
+        </div>
+
+        <div id="CkDownBtn">
+            <button>Address</button>
+            <button>Shipping</button>
+            <button>Payment</button>
+        </div>
+
+        <div id="subMain">
+            <div id="left">
+                <p>Select payment Method</p>
+
+                <div id="box">
+                    <span class="jaadu">
+                        <input id="check1" type="checkbox"/>
+                        <input id="selectPay" type="text" placeholder="Enter Payment method"/>
+                        <span><img id="im1" src="https://img.shop.com/Image/local/images/cc/amex.jpg"></span>
+                        <span><img id="im1" src="https://img.shop.com/Image/local/images/cc/discover.jpg"></span>
+                        <span><img id="im1" src="https://img.shop.com/Image/local/images/cc/mastercard.png"></span>
+                        <span><img id="im1" src="https://img.shop.com/Image/local/images/cc/visa.jpg"></span>
+                        <form id="paymentW">
+                            <input type="number" placeholder="Enter Card Number">
+                            <input type="text" placeholder="Enter Card Holder Name">
+                            <input type="number" placeholder="CVV">
+                            <span id="inpSpan"><input type="text" placeholder="MM/"> <span><input type="number" placeholder="YY"></span></span>
+                            <input type="submit" id="submit">
+                        </form>
+                    
+                    </span>
+
+                    <span id="im4">
+                        <input type="checkbox"/>
+                        <span><img id="im3" src="https://bitpay.com/cdn/merchant-resources/bitpay-accepted-card-group.svg"></span>
+                    </span>
+                    <div id="kachra1">
+                        <div>
+                            <img id="im2"  src="https://img.shop.com/Image/local/images/cc/SezzlePaymentBtn_Small-purple.svg" alt="">
+                        </div>
+                        <div>
+                            <img id="im2"  src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" alt="">
+                        </div>
+                        <div>
+                            <img id="im2"  src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png" alt="">
+                        </div>
+                        <div>
+                            <img id="im2"  src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="inbox2">
+                    <div id="box1">
+                        <p>Shipping Address</p>
+                        <div id="innerBox1"></div>
+                    </div>
+                    <div id="box2">
+                        <p>Coupon/Gift Card</p>
+                        <p>Coupon</p>
+                        <span>
+                            <input id="inp" type="text" placeholder="Coupon Code">
+                            <span><Button>Apply</Button></span>
+                        </span>
+                        <p>Gift Card</p>
+                        <span>
+                            <input  id="inp" type="text" placeholder="Gift Card Number">
+                            <span><input id="pin" type="text" placeholder="Pin"></span>
+                            <span><Button>Apply</Button></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right">
+                <div id="od">
+                    <h1>Order Summary</h1>
+                </div>
+                
+                
+                <div id="subTotal">
+                    <div id="itotalN"> 
+                        <p>Items Subtotal: </p>
+                        <p>Tax Total: </p>
+                        <p>Shipping: </p>
+                    </div>
+                    <div id="itotalV"></div>
+                </div>
+
+                <div id="odTotal">
+                    <p>Order Total:</p>
+                    <p id="Ototal"></p>
+                </div>
+
+                <div id="kachraBox">
+                    <label><input type="checkbox">Get text alerts for this order</label>
+                   <span></span> 
+                    <p>Mobile Phone</p>
+                    <input type="text" name="" id="kboxInput" placeholder="Please Enter Your 10 digit Phone No.">
+                    <p>Message and data rates may apply.</p>
+                </div>
+
+                <div id="placeOrder">
+                    <a href="#">Shipping</a>
+                    <button id="conCheck">Place Order</button>
+                </div>
+
+                <div id="fback"> 
+                    <p>Let us know how we are doing <a href="#"> Send Feedback </a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div id="cart_footer">
+        <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. (famos-p17)</p>
+        <div id="atags">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms and Use</a>
+            <a href="">Advertising Disclosure</a>
+            <a href="">Return Policy</a>
+            <a href="">Shipping information</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/scripts/payment.js"></script>
