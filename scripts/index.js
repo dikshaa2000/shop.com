@@ -1,4 +1,10 @@
 
+import header from "../components/header.js";
+document.querySelector("#header-import-div").innerHTML=header();
+
+import footer from "../components/footer.js";
+document.querySelector("#footer-import-div").innerHTML=footer();
+
 let clothes = document.querySelector("#clothes");
 let mensCloth = document.querySelector("#mens-clothing");
 let back = document.querySelector("#back-clothing");
