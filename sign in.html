@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 45px;
+            /* border: 1px solid rgb(107, 41, 41); */
+            width: 70%;
+            height: 300px;
+            margin: auto;
+            margin-top: 150px;
+        }
+        
+        #right {
+            /* border: 1px solid #ff0000; */
+            width: 40%;
+            height: 100%;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #202340;
+            padding-top: 50px;
+        }
+        
+        #create_btn:hover {
+            background-color: rgb(52, 52, 117);
+            color: white;
+            cursor: pointer;
+        }
+        
+        #create_btn {
+            background-color: white;
+            padding: 10.4px;
+            border: 0.5px solid red;
+            width: 65%;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        #signin_btn {
+            background-color: rgb(52, 52, 117);
+            color: white;
+            width: 100%;
+            font-family: sans-serif;
+            padding: 10.4px;
+            font-size: 16px;
+            margin: 20px 0px 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 2px;
+        }
+        
+        #left {
+            /* border: 1px solid red; */
+        }
+        
+        input[type=text] {
+            padding: 10px;
+            width: 280px;
+            margin: 5px 5px 0px 0px;
+            background-color: white;
+            border-radius: 2px;
+            border: 0.5px solid #202340;
+        }
+        
+        label {
+            font-family: sans-serif;
+            color: #202340;
+        }
+        
+        #right>p>u:hover {
+            color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <h1>Sign in</h1>
+            <label>
+                Email address:</br>
+            <input type="text" placeholder="yourname@example.com">
+            </label>
+            </br> <label> Password:
+            <br>
+            <input type="text" placeholder="Please enater your password">
+            </label>
+            </br>
+            <label><u>Forgot your Password?</u></label>
+            </br>
+            </br>
+            <!-- <button>Sign In</button> -->
+            <input id="signin_btn" type="submit" value="Sign In" />
+        </div>
+
+
+        <div id="right">
+            <h2>Don't have an account?</h2>
+            <p>With a SHOP.COM account, you can enjoy the following benefits: up to 50%
+                <span><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" width="15px" alt=""></span> Cashback on eligible purchases, redeem discount coupons, order status and history, saved payment options and addresses, exclusive
+                emails and more. <u>Learn more</p>
+            </u>
+                <!-- <button>Create your new account</button> -->
+                <input id="create_btn" type="submit" value="Create your new account" />
+        </div>
+    </div>
+
+</body>
+
+</html>
