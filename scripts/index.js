@@ -25,11 +25,12 @@ let crossSign=document.querySelector("#cross-sign");
 let signDiv=document.querySelector("#sign-div");
 let signin=document.querySelector("#ek");
 let signIcon=document.querySelector("#Signin");
+let cartLink=document.querySelector("#teen");
 let signLink=document.querySelector("#signin-link");
 let registerLink=document.querySelector("#register-link");
 let id;
 
-addloginkey();  //to add islogin key
+// addloginkey();  //to add islogin key
 islogged();     //to add User's name to navbar 
 // FUNCTION TO ADD ISSIGNED IN KEY TO LOCAL STORAGE
 
@@ -49,7 +50,13 @@ function islogged(){
     }
 
 }
-
+// FUNCTION REDIRECT TO CART PAGE
+cartLink.onclick=function(){
+    tocart();
+}
+function tocart(){
+    window.location.href="cart.html";
+}
 // FUNCTION TO REDIRECT TO SIGNIN PAGE
 signLink.onclick=function(){
     tosignin();

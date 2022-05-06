@@ -467,6 +467,12 @@ color:#00a8ca;
     margin-left: 100px;
 
 }
+#threeTH>div{
+    cursor: pointer;
+}
+#threeTH>div:hover{
+    color:#00a8ca;
+}
 #threeTH p{
     padding:0 ;
 }
