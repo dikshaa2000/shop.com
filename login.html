@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/40ce6520f1.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles/index.css">  <!-- CSS FOR HEADER & FOOTER -->
     <style>
         .container {
             display: flex;
@@ -56,7 +66,7 @@
             border-radius: 2px;
         }
         
-        input[type=text] {
+        #password {
             padding: 10px;
             width: 280px;
             margin: 5px 5px 0px 0px;
@@ -78,6 +88,12 @@
 </head>
 
 <body>
+
+    <!-- HEADER COMP START -->
+    <div id="header-import-div">
+    </div>
+    <!-- HEADER COMP END -->
+
     <div class="container">
         <div id="left">
             <h1>Sign in</h1>
@@ -87,7 +103,7 @@
             </label>
             </br> <label> Password:
             <br>
-            <input type="text" id="password" placeholder="Please enater your password">
+            <input type="text" id="password" placeholder="Please enter your password">
             </label>
             </br>
             <label><u>Forgot your Password?</u></label>
@@ -109,10 +125,16 @@
         </div>
     </div>
 
+    <!-- FOOTER COMP START -->
+    <div id="footer-import-div">
+    </div>
+
+    <!-- FOOTER COMP END-->
+
 </body>
 
 </html>
-
+<script src="scripts/index.js" type="module"></script>
 <script>
     document.querySelector("#signin_btn").addEventListener("click", signIN);
     var regUser = JSON.parse(localStorage.getItem("userDatabase"));
@@ -126,7 +148,8 @@
 
             if (regUser[i].email == email && regUser[i].password == password) {
 
-                alert("User Successfully Login")
+                alert("User Successfully Login");
+                localStorage.setItem("islogin","true");
                 window.location.href = "index.html";
             } else {
                 alert("User Successfully Not Login")
@@ -134,4 +157,6 @@
 
         }
     }
+
 </script>
+
