@@ -6,9 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/40ce6520f1.js" crossorigin="anonymous"></script>
     <title>
         SHOP.COM - Online Shopping Marketplace: Cloths,Shoes,Beauty,Fashion...
     </title>
+
+    <link rel="stylesheet" href="styles/index.css">  <!-- CSS FOR HEADER & FOOTER -->
     <style>
         body {
             color: rgb(27, 27, 27);
@@ -62,7 +70,7 @@
             width: 90%;
         }
         
-        button {
+        #create_btn>button {
             width: 500px;
             height: 45px;
             /* color: white; */
@@ -92,9 +100,16 @@
             margin-top: 20px;
         }
     </style>
+    <link rel="stylesheet" href="styles/index.css">  <!-- CSS FOR HEADER & FOOTER -->
 </head>
 
 <body>
+
+    <!-- HEADER COMP START -->
+    <div id="header-import-div">
+    </div>
+    <!-- HEADER COMP END -->
+
     <form id="sign_main" onsubmit="Register(event)">
         <h1>Create an account</h1>
         <p>* Indicates required fields</p>
@@ -183,10 +198,16 @@
         </p>
     </form>
 
+    <!-- FOOTER COMP START -->
+    <div id="footer-import-div">
+    </div>
+
+    <!-- FOOTER COMP END-->
+
 </body>
 
 </html>
-
+<script src="scripts/index.js" type="module"></script>
 <script>
     document.getElementById("#create_btn").onclick = function() {
         Register(event)
@@ -194,7 +215,7 @@
 
     function Register(event) {
         event.preventDefault();
-        var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+        var userData = [];
 
         var reg_data = {
             firstName: document.getElementById("firstName").value,

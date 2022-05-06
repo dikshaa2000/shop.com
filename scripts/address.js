@@ -45,3 +45,5 @@ document.getElementById("conCheck").addEventListener("click", shipPagefn)
 function shipPagefn(){
     window.location.href = "shipping.html"
 }
+
+

@@ -43,7 +43,9 @@ function addloginkey(){
 function islogged(){
     let key=localStorage.getItem("islogin");
     if(key=="true"){
-        signIcon.innerHTML="Hello, Shadik";
+        let arr=JSON.parse(localStorage.getItem("userDatabase"));
+        let fname=arr[0].firstName;
+        signIcon.innerHTML=`Hello, ${fname}`;
     }
 
 }
@@ -54,7 +56,7 @@ signLink.onclick=function(){
 }
 function tosignin(){
     signDiv.style.display="none";
-    window.location.href="#";
+    window.location.href="login.html";
 }
 
 // FUNCTION TO REDIRECT TO REGISTER PAGE
@@ -62,7 +64,8 @@ registerLink.onclick=function(){
     toregister();
 }
 function toregister(){
-    window.location.href="#";
+    signDiv.style.display="none";
+    window.location.href="signup.html";
 }
 
 // FUNCTION FOR CROSS_RESULT
@@ -273,7 +276,7 @@ function showFunc(data1,data2) {
     searchDiv.append(divL,divR);
 }
 
-// FUNCIOTN MAIN IN DEBOUNCE
+// FUNCTOIN MAIN IN DEBOUNCE
 async function main() {
     let [data1,data2] = await searchFunc();
     if (data1 == undefined && data2 == undefined) {
@@ -301,6 +304,6 @@ function searchProduct(el) {
     arr.push(el);
     localStorage.setItem("Searched_category", JSON.stringify(arr));
     clothesDiv.style.display="none";
-    //window.location.href = ""
+    //window.location.href = "";
 }
 
