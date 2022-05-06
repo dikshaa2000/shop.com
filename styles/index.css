@@ -573,14 +573,16 @@ color:#00a8ca;
 }
 .content-div-3{
     width:100%;
-    margin:0;
+    display:flex;
+    justify-content: center;
     padding:10px 0;
     box-sizing: border-box;
     background-color: white;
+    overflow: hidden;
 }
 .content-div-3 img{
     height:300px;
-    width:100%;
+    /* width:100%; */
     margin:0;
     padding:10px 0;
     box-sizing: border-box;
@@ -971,6 +973,14 @@ color:#00a8ca;
         grid-gap:10px;
 
     }
-
+@media screen and (max-width:600px){
+    #img1 img{
+        width:50px;
+        height:45px;
+    }
+    #one{
+        width:90%;
+    }
+} 
 }
 

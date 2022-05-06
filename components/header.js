@@ -12,7 +12,11 @@ function header(){
 
         
             <div id="img1">
-                <img src="web_img/shop-logo-us.svg">
+            <picture>
+                <source media="(max-width: 600px)" srcset="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg">
+                <img src="web_img/shop-logo-us.svg" alt="logo">
+            </picture>
+                
             </div>
 
 
