@@ -23,10 +23,30 @@ let searchDiv = document.querySelector("#search-result-div");
 // FOR SIGNIN DIV
 let crossSign=document.querySelector("#cross-sign");
 let signDiv=document.querySelector("#sign-div");
-let signin=document.querySelector("#ek")
+let signin=document.querySelector("#ek");
+let signIcon=document.querySelector("#Signin");
 let signLink=document.querySelector("#signin-link");
 let registerLink=document.querySelector("#register-link");
 let id;
+
+addloginkey();  //to add islogin key
+islogged();     //to add User's name to navbar 
+// FUNCTION TO ADD ISSIGNED IN KEY TO LOCAL STORAGE
+
+function addloginkey(){
+    localStorage.setItem("islogin","false");
+
+}
+
+// FUNCTION TO CHECK IF LOGGED IN
+
+function islogged(){
+    let key=localStorage.getItem("islogin");
+    if(key=="true"){
+        signIcon.innerHTML="Hello, Shadik";
+    }
+
+}
 
 // FUNCTION TO REDIRECT TO SIGNIN PAGE
 signLink.onclick=function(){

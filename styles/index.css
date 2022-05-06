@@ -45,7 +45,7 @@ body {
     /* line-height: 1.6; */
     z-index: 6;
     display: none;
-    
+
 
 }
 @keyframes slideInCategory {
@@ -247,7 +247,7 @@ body {
 #second{
     height: 60px;
     width: 100%;
-    padding:10px 20px 0; 
+    padding:10px 20px 0;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
@@ -379,7 +379,7 @@ body {
 }
 #search-result>div:nth-child(2){
     width:66%;
-    
+
 }
 #search-result img{
     max-width:100%;
@@ -459,7 +459,7 @@ color:#00a8ca;
     padding:0;
 }
 #threeTH{
-    
+
     display: flex;
     justify-content: flex-start;
     /* width: 30%; */
@@ -475,7 +475,7 @@ color:#00a8ca;
     display: flex;
     justify-content: flex-start;
     gap:5px;
-} 
+}
 /*#ek1{
     height: 30px;
     width: 30px;
@@ -579,6 +579,7 @@ color:#00a8ca;
     background-color: white;
 }
 .content-div-3 img{
+    height:300px;
     width:100%;
     margin:0;
     padding:10px 0;
@@ -614,7 +615,7 @@ color:#00a8ca;
 .content-div-4>div>div:nth-child(2) img{
     height:90%;
     width:100%;
-    
+
 }
 .content-div-4>div>div:nth-child(3){
     font-size: 14px;
@@ -628,7 +629,7 @@ color:#00a8ca;
 .content-div-5 img{
     width:13%;
     margin:20px auto;
-    
+
 }
 .content-div-6{
     background-color: white;
@@ -658,7 +659,7 @@ color:#00a8ca;
     margin:10px auto;
     padding:10px 80px;
     box-sizing: border-box;
-    
+
 }
 
 .content-div-7>div{
@@ -698,25 +699,29 @@ color:#00a8ca;
     padding:10px 0 20px;
     box-sizing: border-box;
 }
-.A8{grid-area: 8A;}
-.B8{grid-area: 8B;}
-.C8{grid-area: 8C;}
+.A8{grid-area: AA;}
+.B8{grid-area: BB;}
+.C8{grid-area: CC;}
 
 .content-div-8>div{
     width:90%;
     display:grid;
     /* grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1; */
-    grid-template-areas: 
-    "8A 8B 8C";
+    grid-template-areas:
+    "AA BB CC";
     gap:50px;
     box-sizing: border-box;
     margin:0 auto;
-    
+
+}
+.content-div-8>div>div>div:nth-child(1){
+    display:flex;
+    justify-content: center;
 }
 .content-div-8 img{
     height:90%;
-    width:100%;
+    max-width:100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .content-div-8 p{
@@ -733,13 +738,13 @@ color:#00a8ca;
     margin:10px auto;
     padding:10px 20px;
     box-sizing: border-box;
-    
+
 }
-.A9{grid-area: 9A;}
-.B9{grid-area: 9B;}
-.C9{grid-area: 9C;}
-.D9{grid-area: 9D;}
-.E9{grid-area: 9E;}
+.A9{grid-area: A;}
+.B9{grid-area: B;}
+.C9{grid-area: C;}
+.D9{grid-area: D;}
+.E9{grid-area: E;}
 
 .content-div-9>div{
     width:100%;
@@ -747,18 +752,22 @@ color:#00a8ca;
     display:grid;
     /* grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto; */
-    grid-template-areas: "9A 9B 9C 9D 9E";
+    grid-template-areas: "A B C D E";
     gap:20px;
     box-sizing: border-box;
 }
 .content-div-9>div>div{
     height:300px;
 }
+.content-div-8>div>div>div:nth-child(1){
+    display:flex;
+    justify-content: center;
+}
 .content-div-9 img{
     height:75%;
     max-width:100%;
     margin:0 auto;
-    
+
 }
 .content-div-9>div p{
     text-align: center;
@@ -923,12 +932,15 @@ color:#00a8ca;
 }
     }
 @media screen and (max-width:900px){
-    
+
     #three,#threeTwo{
         display: none;
     }
     #footer-bot>div:nth-child(1)>div{
         width:10%;
+    }
+    .content-div-7>div{
+        grid-template-columns: repeat(4,1fr);
     }
 }
 @media screen and (max-width:768px){
@@ -936,7 +948,7 @@ color:#00a8ca;
         grid-template-columns: repeat(2,1fr);
     }
     .content-div-7>div{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     .content-div-7{
         padding: 10px 20px;
@@ -944,20 +956,19 @@ color:#00a8ca;
     .content-div-9>div{
         /* grid-template-columns: repeat(3,1fr); */
         /* grid-auto-columns: minmax(repeat(2,1fr,repeat(3,1fr))); */
-        grid-template-areas: 
-        "9A 9A 9B 9B 9C 9C"
-        "9D 9D 9D 9E 9E 9E";
-        
+        grid-template-areas:
+        "A A B B C C"
+        "D D D E E E";
+
     }
     .content-div-8>div{
-        grid-template-areas: 
-        "8A 8A 8B 8B"
-        "8C 8C 8C 8C"
+        grid-template-areas:
+        "AA AA BB BB"
+        "CC CC CC CC"
         ;
         grid-gap:10px;
-        
+
     }
 
 }
 
-    
