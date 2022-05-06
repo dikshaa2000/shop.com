@@ -23,7 +23,7 @@ let searchDiv = document.querySelector("#search-result-div");
 // FOR SIGNIN DIV
 let crossSign=document.querySelector("#cross-sign");
 let signDiv=document.querySelector("#sign-div");
-let signin=document.querySelector("#Signin")
+let signin=document.querySelector("#ek")
 let signLink=document.querySelector("#signin-link");
 let registerLink=document.querySelector("#register-link");
 let id;
@@ -33,6 +33,7 @@ signLink.onclick=function(){
     tosignin();
 }
 function tosignin(){
+    signDiv.style.display="none";
     window.location.href="#";
 }
 
@@ -58,7 +59,9 @@ signin.onclick=function(){
     showSignin();
 }
 function showSignin(){
+    
     signDiv.style.display="block";
+    signDiv.style.animation="0.5s linear 0s 1 normal forwards running slideInSign";
 }
 
 // FUNCTION TO CLOSE SIGNIN 
@@ -66,7 +69,12 @@ crossSign.onclick=function(){
     closeSign();
 }
 function closeSign(){
-    signDiv.style.display="none";
+    signDiv.style.animation="0.5s linear 0s 1 normal forwards running slideOutSign";
+    
+    setTimeout(() => {
+        signDiv.style.display="none";
+    },500);
+    
    
 }
 // FUNCTION TO SHOW CATEGORY MENU
@@ -76,6 +84,7 @@ category.onclick = function () {
 
 function showCategory() {
     catDiv.style.display = "block";
+    catDiv.style.animation= "0.5s linear 0s 1 normal forwards running slideInCategory";
 }
 
 // FUNCTION TO SHOW MENSCLOTHING
@@ -110,8 +119,17 @@ crossCloth.onclick = function () {
 }
 
 function closeCatogory() {
-    catDiv.style.display = "none";
-    clothesDiv.style.display = "none";
+    // catDiv.style.animation="0.5s linear 0s 1 normal backwards running slideInCategory";
+    // clothesDiv.style.animation="0.5s linear 0s 1 normal backwardss running slideInCategory";
+    catDiv.style.animation="0.5s linear 0s 1 normal forwards running slideOutCategory";
+    clothesDiv.style.animation="0.5s linear 0s 1 normal forwards running slideOutCategory";
+    setTimeout(() => {
+        catDiv.style.display = "none";
+        clothesDiv.style.display = "none";
+    },500);
+    
+    // catDiv.style.display = "none";
+    // clothesDiv.style.display = "none";
 }
 
 // FUNCTION TO SHOW Category>Clothes
@@ -122,6 +140,7 @@ clothes.onclick = function () {
 function showClothes() {
     catDiv.style.display = "none";
     clothesDiv.style.display = "block";
+    clothesDiv.style.animation= "0.5s linear 0s 1 normal forwards running slideInCategory";
 }
 
 // FUNCTION FOR Back to Menu
@@ -261,6 +280,7 @@ function searchProduct(el) {
     let arr = [];
     arr.push(el);
     localStorage.setItem("Searched_category", JSON.stringify(arr));
+    clothesDiv.style.display="none";
     //window.location.href = ""
 }
 
