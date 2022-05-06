@@ -173,7 +173,7 @@
         </div>
 
         <div id="create_btn">
-            <button> <a href="sign in.html">Create your new account </a></button>
+            <button> Create your new account </button>
 
         </div>
 
@@ -188,14 +188,14 @@
 </html>
 
 <script>
-    var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
     document.getElementById("#create_btn").onclick = function() {
         Register(event)
     }
 
     function Register(event) {
-
         event.preventDefault();
+        var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+
         var reg_data = {
             firstName: document.getElementById("firstName").value,
             lastName: document.getElementById("lastName").value,
