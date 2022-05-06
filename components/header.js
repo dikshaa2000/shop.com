@@ -9,6 +9,8 @@ function header(){
         </div>
 
         <div id="second">
+
+        
             <div id="img1">
                 <img src="web_img/shop-logo-us.svg">
             </div>
@@ -71,13 +73,13 @@ function header(){
                 <div>
                     <p>SHOP Travel</p>
                 </div>
-                <div>
+                <div id="depts">
                     <p>Departments</p>
                 </div>
                 <div>
                     <p>Shop Buddy</p>
                 </div>
-                <div>
+                <div id="shopL">
                     <p>SHOP Local</p>
                 </div>
 
@@ -85,13 +87,19 @@ function header(){
 
             <div id="threeTH">
                 <div id="ek">
-                    <p id="Signin"> <i class="fa-solid fa-user fa-xl"></i> Sign in</p>
+                    <div><i class="fa-solid fa-user fa-xl"></i></div>
+                    <div><p id="Signin">Sign in</p></div>
+                    
                 </div>
                 <div id="do">
-                    <p> <i class="fa-solid fa-rotate-left fa-xl"></i> Orders</p>
+                <div><i class="fa-solid fa-rotate-left fa-xl"></i></div>
+                <div><p id="Orders">Orders</p></div>
+                
                 </div>
                 <div id="teen">
-                    <p><i class="fa-solid fa-cart-shopping fa-xl"></i> Cart</p>
+                <div><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
+                <div><p id="Cart">Cart</p></div>
+                    
                 </div>
             </div>
         </div>
@@ -275,5 +283,6 @@ function header(){
     </div>
 </div>`
 }
+
 
 export default header;
