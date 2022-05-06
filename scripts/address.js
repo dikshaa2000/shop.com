@@ -32,6 +32,12 @@ function formFN() {
   localStorage.setItem("adddetails",JSON.stringify(addressData))
 
   alert("Address Details have been saved")
+  document.getElementById("name").value = ""
+  document.getElementById("surname").value = ""
+  document.getElementById("address").value = ""
+  document.getElementById("zpcode").value = ""
+  document.getElementById("city").value = ""
+  document.getElementById("phno").value = ""
 
 }
 

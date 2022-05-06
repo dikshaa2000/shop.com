@@ -1,5 +1,5 @@
 
-let data = JSON.parse(localStorage.getItem("ProductInCart"))
+let data = JSON.parse(localStorage.getItem("productData"))
 console.log(data)
 
 let totPRice = 0
@@ -111,5 +111,17 @@ abcd.append(abinp,cdbtn)
 let checkbtn = document.createElement("button")
 checkbtn.innerText = "Proceed to Checkout"
 checkbtn.setAttribute("id", "pcheckout")
-
+checkbtn.addEventListener("click", checkbtnP)
+function checkbtnP(elem){
+    window.location.href = "address.html"
+}
 subright.append(subtotal, a, abcd, checkbtn)
+
+
+
+
+
+
+
+
+
