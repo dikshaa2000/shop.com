@@ -611,9 +611,10 @@ color:#00a8ca;
 }
 .content-div-4>div>div:nth-child(2){
     width:100%;
+    height:65%;
 }
 .content-div-4>div>div:nth-child(2) img{
-    height:90%;
+    height:100%;
     width:100%;
 
 }
@@ -942,11 +943,12 @@ color:#00a8ca;
     .content-div-7>div{
         grid-template-columns: repeat(4,1fr);
     }
-}
-@media screen and (max-width:768px){
     .content-div-4, .content-div-6{
         grid-template-columns: repeat(2,1fr);
     }
+}
+@media screen and (max-width:768px){
+    
     .content-div-7>div{
         grid-template-columns: repeat(3,1fr);
     }
