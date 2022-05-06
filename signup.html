@@ -62,18 +62,23 @@
             width: 90%;
         }
         
-        #create_btn {
+        button {
             width: 500px;
             height: 45px;
-            font-weight: bold;
-            color: white;
+            /* color: white; */
             background-color: rgb(48, 48, 78);
             margin-top: 20px;
         }
         
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        /*         
         #create_btn:hover {
             background-color: rgb(19, 19, 92);
-        }
+        } */
         
         .jkl {
             border: 1px solid rgb(160, 160, 160);
@@ -166,38 +171,48 @@
                 </div>
             </div>
         </div>
-        <div>
-            <input id="create_btn" type="submit" value="Create your new account" />
+
+        <div id="create_btn">
+            <button> <a href="sign in.html">Create your new account </a></button>
+
         </div>
+
+
         <p>
             By creating an account, you are agreeing to our Terms of Service and Privacy Policy.
         </p>
     </form>
-    <div id="bottom"></div>
+
 </body>
 
 </html>
 
 <script>
     var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
-    async function Register(event) {
-        try {
-            event.preventDefault();
-            var reg_data = {
-                firstName: document.getElementById("firstName").value,
-                lastName: document.getElementById("lastName").value,
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value,
-                confirmPassword: document.getElementById("c_password").value,
+    document.getElementById("#create_btn").onclick = function() {
+        Register(event)
+    }
 
-            };
+    function Register(event) {
 
-            userData.push(reg_data);
-            localStorage.setItem("userDatabase", JSON.stringify(userData));
+        event.preventDefault();
+        var reg_data = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            confirmPassword: document.getElementById("c_password").value,
+
+        };
+
+        userData.push(reg_data);
+        localStorage.setItem("userDatabase", JSON.stringify(userData));
+        alert("Register succesfully")
+        window.location.href = "login.html"
 
 
-        } catch (err) {
-            console.log("err:", err);
-        }
+
+
+
     }
 </script>

@@ -56,10 +56,6 @@
             border-radius: 2px;
         }
         
-        #left {
-            /* border: 1px solid red; */
-        }
-        
         input[type=text] {
             padding: 10px;
             width: 280px;
@@ -87,17 +83,17 @@
             <h1>Sign in</h1>
             <label>
                 Email address:</br>
-            <input type="text" placeholder="yourname@example.com">
+            <input type="email" id="email" placeholder="yourname@example.com">
             </label>
             </br> <label> Password:
             <br>
-            <input type="text" placeholder="Please enater your password">
+            <input type="text" id="password" placeholder="Please enater your password">
             </label>
             </br>
             <label><u>Forgot your Password?</u></label>
             </br>
             </br>
-            <!-- <button>Sign In</button> -->
+
             <input id="signin_btn" type="submit" value="Sign In" />
         </div>
 
@@ -108,7 +104,7 @@
                 <span><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" width="15px" alt=""></span> Cashback on eligible purchases, redeem discount coupons, order status and history, saved payment options and addresses, exclusive
                 emails and more. <u>Learn more</p>
             </u>
-                <!-- <button>Create your new account</button> -->
+
                 <input id="create_btn" type="submit" value="Create your new account" />
         </div>
     </div>
@@ -116,3 +112,26 @@
 </body>
 
 </html>
+
+<script>
+    document.querySelector("#signin_btn").addEventListener("click", signIN);
+    var regUser = JSON.parse(localStorage.getItem("userDatabase"));
+
+    function signIN() {
+        // alert("hello")
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        for (i = 0; i < regUser.length; i++) {
+
+            if (regUser[i].email == email && regUser[i].password == password) {
+
+                alert("User Successfully Login")
+                window.location.href = "index.html";
+            } else {
+                alert("User Successfully Not Login")
+            }
+
+        }
+    }
+</script>
