@@ -100,14 +100,34 @@ let append = (data) => {
     let divBuying = document.createElement("button");
     divBuying.innerText = "Add to Cart";
     divBuying.onclick = function () {
-       GoToCart();
+       AddToCart();
     }
 
-    function GoToCart(){
+    function AddToCart(){
       let a = "cart";
       createProductKeyFun(a);
-      window.open("cart.html", "_self");
+      //location.reload();
+      countcart()
+      //window.open("cart.html", "_self");
    }
+
+// FUNCTION TO CHECK ITEMS IN CART START
+   let cartIcon=document.querySelector("#cartIcon");
+   let cartCountDiv=document.querySelector("#cart-count-div");
+   let cartCount=document.querySelector("#cart-count");
+   
+function countcart(){
+  let key=localStorage.getItem("islogin");
+  if(key=="true"){
+      let arr=JSON.parse(localStorage.getItem("ProductInCart")) || [];
+      if(arr.length>0){
+          cartCount.innerText=arr.length;
+          cartCountDiv.style.display="block";
+          cartIcon.style.color="tomato";
+      }
+  }
+}
+// FUNCTION TO CHECK ITEMS IN CART END
 
     ButtonDiv.append(divDetail, divBuying);
 

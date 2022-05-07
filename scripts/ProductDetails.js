@@ -6,7 +6,7 @@ document.getElementById("ProductPrice").innerText="$"+ pri +" - "+ " $"+ CartPro
 document.getElementById("ProductImage").src=CartProducts.image;
 document.getElementById("ProductImage2").src=CartProducts.image;
 
-document.getElementById("GoToCartPage").addEventListener("click",GoToCartPage);
+document.getElementById("GoToCartPage").addEventListener("click", GoToCartPage);
 
 
 function GoToCartPage(){
@@ -20,6 +20,7 @@ function GoToCartPage(){
 
         showProduct.push(ProductObj);
         localStorage.setItem("ProductInCart", JSON.stringify(showProduct));
-      
-    window.open("cart.html","_self");
+        
+      location.reload();
+    //window.open("cart.html","_self");
 }
