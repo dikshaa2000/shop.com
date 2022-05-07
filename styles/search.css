@@ -1,0 +1,188 @@
+body {
+    font-family: sans-serif;
+}
+
+#Product_Container {
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+}
+
+#Product_Container>#Product_category {
+    margin-left: 20px;
+    width: 20%;
+}
+#Product_Container>#Product_category .fa-solid {
+    float: right;
+}
+
+
+#sortDiv{
+    border: 0px;
+    height: 25px;
+    margin-bottom:10px ;
+    width: auto;
+}
+
+#Product_Container>#products {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 32%);
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#products>div {
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: auto;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+#products>div>img{
+    height:400px;
+    width: 100%;
+}
+#products>div>p:nth-child(2){
+    overflow: hidden;
+    height: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+   font-size: 22px;
+}
+#products>div>p:nth-child(3){
+    padding-left: 20px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+#Pricing{
+    margin-top: -15px;
+    padding-left: 20px;
+    display: flex;
+}
+#Pricing>p:first-child{
+text-decoration: line-through;
+font-size: 18px;
+}
+#Pricing>p:nth-child(2){
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+color: rebeccapurple;
+}
+
+
+#ButtonDiv>button:first-child{
+    border: none;
+    background-color: #F0F1F7;
+color: #2E2C38;
+    height: 40px;
+    width: 50%;
+}
+#ButtonDiv{
+    margin-bottom: 0px;
+    display: flex;
+}
+#ButtonDiv>button:last-child{
+ background-color: #414467;
+    height: 40px;
+    border: none;
+    width: 50%;
+    color: white;
+}
+#ButtonDiv>button:hover{
+ cursor: pointer;
+}
+
+#products>div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#Product_category>input{
+    height: 20px;
+    width: 20px;
+}
+
+#Product_category>button{
+    height:50px;
+    width: 98%;
+    background-color: transparent;
+    font-size:18px;
+    font-weight: 300;
+    text-align: left;
+    border: 0px;
+  }
+  #Women_Clothing>p{
+      margin-top: -5px;
+   font-size: 15px;
+  }
+  #CategoryDiv>p{
+   font-size: 15px;
+   margin-top: -5px;
+  }
+  #Fabric>p{
+   font-size: 15px;
+   margin-top: -5px;
+  }
+  #Color>p{
+   font-size: 15px;
+   margin-top: -5px;
+  }
+  #Size>p{
+   font-size: 15px;
+   margin-top: -5px;
+  }
+  #Special_Size>p{
+   font-size: 15px;
+   margin-top: -5px;
+  }
+  #Price_Range>p{
+    font-size: 15px;
+    margin-top: -5px;
+}
+  
+
+
+#Product_category>div{
+    padding-left: 50px;
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+
+@media screen and (max-width: 400px) {
+    #Product_category {
+      display: none;
+    }
+    #Product_Container>#products {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 800px) {
+    #Product_category {
+      display: none;
+    }
+    #Product_Container>#products {
+     width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+        padding: 10px;
+    }
+  }
+
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
+      #Product_category {
+        display: none;
+      }
+      #Product_Container>#products {
+       width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+          padding: 10px;
+      }
+    }
