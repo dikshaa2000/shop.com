@@ -4,8 +4,8 @@ console.log(data)
 
 let totPRice = 0
 
-data.forEach(({image, price, title},elem,index)=>{
-    
+data.forEach((elem,index)=>{
+    let {image, price, title}=elem;
     totPRice=totPRice+Number(price)
     // console.log(description)
     localStorage.setItem("Total Price", JSON.stringify(totPRice))
