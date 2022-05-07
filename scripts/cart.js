@@ -1,70 +1,77 @@
 
 let data = JSON.parse(localStorage.getItem("ProductInCart"))
-console.log(data)
+// console.log(data)
 
 let totPRice = 0
-
-data.forEach(({image, price, title},elem,index)=>{
-    
-    totPRice=totPRice+Number(price)
-    // console.log(description)
-    localStorage.setItem("Total Price", JSON.stringify(totPRice))
+function jaadu(){
     let ds = document.getElementById("leftbox1")
-    let details = document.createElement("div")
-    details.setAttribute("id", "left1")
+    ds.innerHTML = null;
 
-    let img = document.createElement("img")
-    img.src = image;
+    data.forEach(({image, price, title},index)=>{
+    
+        totPRice=totPRice+Number(price)
+        // console.log(description)
+        localStorage.setItem("Total Price", JSON.stringify(totPRice))
+        
+        let details = document.createElement("div")
+        details.setAttribute("id", "left1")
+    
+        let img = document.createElement("img")
+        img.src = image;
+    
+        let subdet= document.createElement("div")
+        subdet.setAttribute("class", "details")
+    
+        let name=document.createElement("h2")
+        name.innerText=title
+    
+        let p1 = document.createElement("p")
+        p1.setAttribute("class", "p1")
+        p1.innerText = `$${price}`
+    
+        let p2 = document.createElement("p")
+        p2.setAttribute("class", "i")
+        p2.innerText = "Item#: JSMS10760"
+    
+        let p3 = document.createElement("p")
+        p3.setAttribute("class", "p2")
+        let inp = document.createElement("input")
+        inp.type = "number"
+        inp.placeholder = "1"
+        let inpBtn = document.createElement("button")
+        inpBtn.setAttribute("id", "quantity")
+        inpBtn.innerText = "Update"
+        p3.innerText = `Quantity:`
+        // ${inp} ${inpBtn}
+        p3.append(inp, inpBtn)
+        subdet.append(name, p1, p2, p3 )
+    
+        let btSandR = document.createElement("div")
+        btSandR.setAttribute("id", "but")
+        let save=document.createElement("button")
+        save.innerText="Save for Later"
+        let remove= document.createElement("button")
+        remove.innerText="Remove"
+    
+        remove.addEventListener("click", function(){
+            removeItem(index)
+    
+        });
+        btSandR.append(save, remove)
+    
+        details.append(img,subdet,btSandR)
+        ds.append(details)
+    
+        // let totalPrice = docu
+    })
+}
 
-    let subdet= document.createElement("div")
-    subdet.setAttribute("class", "details")
-
-    let name=document.createElement("h2")
-    name.innerText=title
-
-    let p1 = document.createElement("p")
-    p1.setAttribute("class", "p1")
-    p1.innerText = `$${price}`
-
-    let p2 = document.createElement("p")
-    p2.setAttribute("class", "i")
-    p2.innerText = "Item#: JSMS10760"
-
-    let p3 = document.createElement("p")
-    p3.setAttribute("class", "p2")
-    let inp = document.createElement("input")
-    inp.type = "number"
-    inp.placeholder = "1"
-    let inpBtn = document.createElement("button")
-    inpBtn.setAttribute("id", "quantity")
-    inpBtn.innerText = "Update"
-    p3.innerText = `Quantity:`
-    // ${inp} ${inpBtn}
-    p3.append(inp, inpBtn)
-    subdet.append(name, p1, p2, p3 )
-
-    let btSandR = document.createElement("div")
-    btSandR.setAttribute("id", "but")
-    let save=document.createElement("button")
-    save.innerText="Save for Later"
-    let remove= document.createElement("button")
-    remove.innerText="Remove"
-
-    remove.addEventListener("click", function(){
-        removeItem(elem, index)
-    });
-    btSandR.append(save, remove)
-
-    details.append(img,subdet,btSandR)
-    ds.append(details)
-
-    // let totalPrice = docu
-})
-
-function removeItem(elem, index){
-    // console.log(elem, index)
-    data.splice(index, 1);
+jaadu()
+function removeItem(index){
+    // console.log( newData, index)
+    data.splice(index,1);
     localStorage.setItem("ProductInCart", JSON.stringify(data))
+    jaadu()
     window.location.reload()
 }
 let totalPrice = document.getElementById("tot")
@@ -92,7 +99,7 @@ subtotal.append(subp1, subp2)
 
 let a = document.createElement("a")
 a.innerText = "Continue Shopping"
-a.href = "#"
+a.href = "search.html"
 
 let abcd = document.createElement("div")
 abcd.setAttribute("id", "inpbotn")

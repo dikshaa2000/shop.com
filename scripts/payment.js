@@ -52,7 +52,7 @@ shipValue.innerText = `$ ${30.82}`
 subdata.append(totalValue, taxValue, shipValue)
 
 let Ordertotal = document.getElementById("Ototal")
-Ordertotal.innerText = `$${16.66+30.82+Math.floor(TotalPrice)}`
+Ordertotal.innerText = `$${Math.floor(16.66+30.82+Math.floor(TotalPrice))}`
 
 let pagetoIndex = document.getElementById("conCheck").addEventListener("click", reload)
 function reload(){
