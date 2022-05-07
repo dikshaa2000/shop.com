@@ -137,7 +137,7 @@ function searchCloth(event){
     let cat=event.target.id;
     console.log(event.target.id);
     localStorage.setItem("Selected_category",cat)
-    // window.location.href="#";
+    window.location.href="search.html";
 }
 
 // FUNCITON TO HIDE CATEGORY MENU
@@ -311,6 +311,6 @@ function searchProduct(el) {
     arr.push(el);
     localStorage.setItem("Searched_category", JSON.stringify(arr));
     clothesDiv.style.display="none";
-    //window.location.href = "";
+    window.location.href = "ProductDetails.html";
 }
 

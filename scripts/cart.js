@@ -1,5 +1,5 @@
 
-let data = JSON.parse(localStorage.getItem("productData"))
+let data = JSON.parse(localStorage.getItem("ProductInCart"))
 console.log(data)
 
 let totPRice = 0
@@ -62,9 +62,9 @@ data.forEach(({image, price, title},elem,index)=>{
 })
 
 function removeItem(elem, index){
-    console.log(elem, index)
+    // console.log(elem, index)
     data.splice(index, 1);
-    localStorage.setItem("productData", JSON.stringify(data))
+    localStorage.setItem("ProductInCart", JSON.stringify(data))
     window.location.reload()
 }
 let totalPrice = document.getElementById("tot")
