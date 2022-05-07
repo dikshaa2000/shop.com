@@ -25,13 +25,19 @@ let crossSign=document.querySelector("#cross-sign");
 let signDiv=document.querySelector("#sign-div");
 let signin=document.querySelector("#ek");
 let signIcon=document.querySelector("#Signin");
+let cartIconDiv=document.querySelector("#cartIcon-div");
+let cartIcon=document.querySelector("#cartIcon");
+let cartCountDiv=document.querySelector("#cart-count-div");
+let cartCount=document.querySelector("#cart-count");
 let cartLink=document.querySelector("#teen");
 let signLink=document.querySelector("#signin-link");
+let signoutLink=document.querySelector("#signout-link");
 let registerLink=document.querySelector("#register-link");
 let id;
 
 // addloginkey();  //to add islogin key
 islogged();     //to add User's name to navbar 
+countcart();    //Add cart count to CART ICON
 // FUNCTION TO ADD ISSIGNED IN KEY TO LOCAL STORAGE
 
 function addloginkey(){
@@ -47,16 +53,46 @@ function islogged(){
         let arr=JSON.parse(localStorage.getItem("userDatabase"));
         let fname=arr[0].firstName;
         signIcon.innerHTML=`Hello, ${fname}`;
+        signLink.style.display="none";
+        signoutLink.style.display="block";
     }
 
 }
+// FUNCTION TO CHECK ITEMS IN CART
+function countcart(){
+    let key=localStorage.getItem("islogin");
+    if(key=="true"){
+        let arr=JSON.parse(localStorage.getItem("ProductInCart")) || [];
+        if(arr.length>0){
+            cartCount.innerText=arr.length;
+            cartCountDiv.style.display="block";
+            cartIcon.style.color="tomato";
+        }
+    }
+}
+
 // FUNCTION REDIRECT TO CART PAGE
 cartLink.onclick=function(){
     tocart();
 }
 function tocart(){
-    window.location.href="cart.html";
+    let key=localStorage.getItem("islogin");
+    if(key=="true"){
+        window.location.href="cart.html";
+    }else{
+    alert("You need to login/Register first");
+    }
 }
+// FUNCTION TO REDIRECT INDEX PAGE AFTER SIGNOUT
+signoutLink.onclick=function(){
+    tosignout();
+}
+function tosignout(){
+    signDiv.style.display="none";
+    localStorage.setItem("islogin","false");
+    window.location.href="index.html";
+}
+
 // FUNCTION TO REDIRECT TO SIGNIN PAGE
 signLink.onclick=function(){
     tosignin();

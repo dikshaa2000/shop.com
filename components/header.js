@@ -11,7 +11,7 @@ function header(){
         <div id="second">
 
         
-            <div id="img1">
+            <div id="img1" onclick="window.location.href='index.html'">
             <picture>
                 <source media="(max-width: 600px)" srcset="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg">
                 <img src="web_img/shop-logo-us.svg" alt="logo">
@@ -101,7 +101,9 @@ function header(){
                 
                 </div>
                 <div id="teen">
-                <div><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
+                <div id="cartIcon-div"><i id="cartIcon" class="fa-solid fa-cart-shopping fa-xl"></i>
+                <div id="cart-count-div"><p id="cart-count"></p></div>
+                </div>
                 <div><p id="Cart">Cart</p></div>
                     
                 </div>
@@ -265,7 +267,7 @@ function header(){
         <h1 class="menu-head"><i class="fa-solid fa-user"></i> Account</h1>
 
         <p id="signin-link"><i class="fa-solid fa-user"></i> Sign in</p>
-
+        <p id="signout-link"><i class="fa-solid fa-user"></i> Sign out</p>
         <p><i class="fa-solid fa-truck fa-lg"></i> Track Orders</p>
         <p><i class="fa-solid fa-rotate-right fa-lg"></i> Reorder Items - updated</p>
         <p><i class="fa-solid fa-dollar-sign"></i> Cashback program</p>

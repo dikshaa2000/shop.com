@@ -57,5 +57,6 @@ Ordertotal.innerText = `$${16.66+30.82+Math.floor(TotalPrice)}`
 let pagetoIndex = document.getElementById("conCheck").addEventListener("click", reload)
 function reload(){
     alert("Your Order has been Placed")
+    localStorage.removeItem("ProductInCart");
     window.location.href ="index.html"
 }
