@@ -20,7 +20,6 @@ function GoToCartPage(){
 
         showProduct.push(ProductObj);
         localStorage.setItem("ProductInCart", JSON.stringify(showProduct));
-        
       location.reload();
     //window.open("cart.html","_self");
 }
