@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 #mainBody{
-    margin: auto;
+    margin: 0 auto 20px;
     width: 70%;
 }
 #check_Total{
