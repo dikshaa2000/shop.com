@@ -23,7 +23,8 @@ function header(){
             <div id="one">
                 <div id="one1">
                     <select id="select">
-                        <option value="All Departments">All Departments</option>
+                        
+                        <option value="">All Departments</option>
                         <option value="">Auto</option>
                         <option value="">Baby</option>
                         <option value="">Beauty</option>
@@ -121,73 +122,73 @@ function header(){
         <p>SHOP.COM Home Warranties</p>
         <p>Onecart Exclusive Deals</p>
 
-        <div id="clothes" class="category-links">
+        <div id="clothes" class="category-links link-category-1">
             <div>
                 <p>Clothes</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Shoes</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Beauty</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Home</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Electronics</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Health & Nutrition</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Jewelry</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Pet Supplies</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Food & Drink</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Sports</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Travel</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-category-1">
             <div>
                 <p>Exclusive Brands</p>
             </div>
@@ -218,37 +219,37 @@ function header(){
         <p id="back-clothing" class="back"><i class="fa-solid fa-angle-left"></i> Back to main</p>
         <h1 class="menu-head">Clothes</h1>
         <h3 class="menu-subhead">Shop All Clothes</h3>
-        <div id="sweater" class="category-links">
+        <div id="sweater" class="category-links link-search-page">
             <div>
                 <p>Sweater</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div id="top-blouses" class="category-links">
+        <div id="top-blouses" class="category-links link-search-page">
             <div>
                 <p>Blouses</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div id="jeans" class="category-links">
+        <div id="jeans" class="category-links link-search-page">
             <div>
                 <p>Jeans</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div id="activewear" class="category-links">
+        <div id="activewear" class="category-links link-search-page">
             <div>
                 <p>Activewear</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div id="dress" class="category-links">
+        <div id="dress" class="category-links link-search-page">
             <div>
                 <p>Dress</p>
             </div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
-        <div class="category-links">
+        <div class="category-links link-search-page">
             <div>
                 <p>Baby & Toddler Clothing</p>
             </div>

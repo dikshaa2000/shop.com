@@ -10,6 +10,8 @@ document.getElementById("GoToCartPage").addEventListener("click", GoToCartPage);
 
 
 function GoToCartPage(){
+  let key=localStorage.getItem("islogin");
+  if(key=="true"){
     let showProduct = JSON.parse(localStorage.getItem("ProductInCart")) || [];
 
       let ProductObj = {
@@ -22,4 +24,8 @@ function GoToCartPage(){
         localStorage.setItem("ProductInCart", JSON.stringify(showProduct));
       location.reload();
     //window.open("cart.html","_self");
+  }else{
+    alert("You need to login/Signup first!");
+  }
+    
 }
