@@ -315,6 +315,7 @@ body {
     height: 100%;
      width: 97%;
      border: 0px;
+     background-color: transparent;
 }
 
 #search-result-div{
@@ -1061,6 +1062,13 @@ color:#00a8ca;
         width:110%;
         left:-10%;
     }
+    #one1{
+        display:none;
+    }
+    #search{
+        width:80%;
+    }
+
 } 
 
 
