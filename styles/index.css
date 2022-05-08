@@ -1004,6 +1004,14 @@ color:#00a8ca;
     #short-index-amount{
         display:block;
     }
+    #category-div, #category-div-1{
+        width:30%;
+        left:-30%;
+    }
+    #sign-div{
+        width:30%;
+        right:-30%;
+    }
 @media screen and (max-width:600px){
     #img1 img{
         width:50px;
@@ -1021,6 +1029,14 @@ color:#00a8ca;
     }
     #footer-bot>div:nth-child(1)>div{
         width:15%;
+    }
+    #category-div, #category-div-1{
+        width:45%;
+        left:-45%;
+    }
+    #sign-div{
+        width:45%;
+        right:-45%;
     }
 } 
 }
