@@ -1057,7 +1057,10 @@ color:#00a8ca;
     #long-all-dept{
         display: none;
     } */
-
+    #search-result-div{
+        width:110%;
+        left:-10%;
+    }
 } 
 
 
