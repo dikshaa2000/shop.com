@@ -104,11 +104,17 @@ let append = (data) => {
     }
 
     function AddToCart(){
+      let key=localStorage.getItem("islogin");
+    if(key=="true"){
       let a = "cart";
       createProductKeyFun(a);
       //location.reload();
       countcart()
       //window.open("cart.html", "_self");
+    }else{
+      alert("You need to login/Signup first!");
+    }
+      
    }
 
 // FUNCTION TO CHECK ITEMS IN CART START

@@ -154,21 +154,28 @@ function showCategory() {
 }
 
 // FUNCTION TO SHOW MENSCLOTHING
-sweater.onclick=function(){
-    searchCloth(event);
-}
-blouse.onclick=function(){
-    searchCloth(event);
-}
-jeans.onclick=function(){
-    searchCloth(event);
-}
-activewear.onclick=function(){
-    searchCloth(event);
-}
-dress.onclick=function(){
-    searchCloth(event);
-}
+
+let clothArr=document.querySelectorAll(".link-search-page");
+clothArr.forEach((el) => {
+    el.addEventListener("click",function(){
+        searchCloth(event);
+    });
+})
+// sweater.onclick=function(){
+//     searchCloth(event);
+// }
+// blouse.onclick=function(){
+//     searchCloth(event);
+// }
+// jeans.onclick=function(){
+//     searchCloth(event);
+// }
+// activewear.onclick=function(){
+//     searchCloth(event);
+// }
+// dress.onclick=function(){
+//     searchCloth(event);
+// }
 function searchCloth(event){
     let cat=event.target.id;
     console.log(event.target.id);
@@ -199,10 +206,15 @@ function closeCatogory() {
 }
 
 // FUNCTION TO SHOW Category>Clothes
-clothes.onclick = function () {
-    showClothes();
-}
 
+let arr1=document.querySelectorAll(".link-category-1");
+arr1.forEach((el) => {
+    el.addEventListener("click",showClothes);
+})
+
+// clothes.onclick = function () {
+//     showClothes();
+// }
 function showClothes() {
     catDiv.style.display = "none";
     clothesDiv.style.display = "block";
