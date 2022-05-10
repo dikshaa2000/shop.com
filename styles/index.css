@@ -624,7 +624,7 @@ color:#00a8ca;
 }
 .content-div-4>div>div:nth-child(1){
     font-size: 19px;
-
+    
 }
 .content-div-4>div>div:nth-child(2){
     width:100%;
@@ -633,7 +633,7 @@ color:#00a8ca;
 .content-div-4>div>div:nth-child(2) img{
     height:100%;
     width:100%;
-
+    object-fit: contain;
 }
 .content-div-4>div>div:nth-child(3){
     font-size: 14px;
@@ -697,6 +697,7 @@ color:#00a8ca;
     width:90%;
     border-radius:100%;
     border:10px solid lightgray;
+    object-fit: contain;
 }
 .content-div-7>div p{
     text-align: center;
@@ -736,11 +737,13 @@ color:#00a8ca;
 .content-div-8>div>div>div:nth-child(1){
     display:flex;
     justify-content: center;
+    
 }
 .content-div-8 img{
     height:90%;
     max-width:100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    object-fit: contain;
 }
 .content-div-8 p{
     text-align: center;
@@ -779,16 +782,17 @@ color:#00a8ca;
 }
 .content-div-9>div>div>div:nth-child(2){
     height:80%;
+    display:flex;
+    justify-content: center;
 }
-.content-div-8>div>div>div:nth-child(1){
+.content-div-9>div>div>div:nth-child(1){
     display:flex;
     justify-content: center;
 }
 .content-div-9 img{
     height:100%;
     max-width:100%;
-    margin:0 auto;
-
+    object-fit: contain;
 }
 .content-div-9>div p{
     text-align: center;

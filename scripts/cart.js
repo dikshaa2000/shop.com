@@ -1,12 +1,12 @@
 
 let data = JSON.parse(localStorage.getItem("ProductInCart"))
-console.log(data)
+//console.log(data)
 
 let totPRice = 0
 
 data.forEach((elem,index)=>{
     let {image, price, title}=elem;
-    totPRice=totPRice+Number(price)
+    totPRice=totPRice+Number(price);
     // console.log(description)
     localStorage.setItem("Total Price", JSON.stringify(totPRice))
     let ds = document.getElementById("leftbox1")
