@@ -49,40 +49,38 @@ Footer component of the website.<br>
 ## Register
 Registeration page takes account details and redirects you to login page.<br>
 
-![register](https://user-images.githubusercontent.com/68966858/167296364-4d3373c5-53f1-426b-8c54-b6e48e6fb2b5.png)
+![register2](https://user-images.githubusercontent.com/68966858/184900241-e64c2dd7-b37e-4cca-ae63-a31a8952a3b6.jpg)
 
 ## Login
 Enter the registration details and you will be logged in.<br>
 
-![signin](https://user-images.githubusercontent.com/68966858/167296368-3fb967fa-b217-45f9-9d45-12fccbd34edd.png)
+![signin2](https://user-images.githubusercontent.com/68966858/184900837-3010e9a8-1f92-4641-99d0-a3a68f336ae9.jpg)
 
 ## Product page
 Displays all products of the selected category offered by the website.<br>
 
-![searchPage](https://user-images.githubusercontent.com/68966858/167296362-0d80b48f-5ec1-4e30-b5f6-206bc3d8466d.png)
+![searchPage2](https://user-images.githubusercontent.com/68966858/184900226-08391193-bf80-4df0-a276-d3a4bb30386e.jpg)
 
 ## Item detail page
 This page display detailed information of the product you click on.<br>
 
-![productDetails](https://user-images.githubusercontent.com/68966858/167296995-208394e2-dbcd-4fee-8333-2b4a491b6d27.png)
+![productDetails2](https://user-images.githubusercontent.com/68966858/184900215-58b6f27a-231f-4cb3-b4b0-5642528cc2dd.jpg)
 
 ## Cart Page
 Displays all the items that you added in the cart.<br>
 
-![cart](https://user-images.githubusercontent.com/68966858/167296352-088aa27f-cd19-41a4-b17f-637bfc931586.png)
-
+![cart2](https://user-images.githubusercontent.com/68966858/184899133-a42fcca7-9d64-44e4-be1a-44f4e1730e9b.jpg)
 ## Address Page
 In this page you have your shipping details.<br>
 
-![address](https://user-images.githubusercontent.com/68966858/167296347-39986c29-0767-4002-9a3e-3b3656b3875f.png)
+![address](https://user-images.githubusercontent.com/68966858/184900195-e6178191-7892-4658-968e-73f9ae6df987.jpg)
 
 ## Shipping Page
 The page displays the cart item along with discount & total.<br>
 
-![checkout](https://user-images.githubusercontent.com/68966858/167296340-e6974461-0751-43c8-b5bf-17ecceeb4d5b.png)
+![checkoutCart](https://user-images.githubusercontent.com/68966858/184902296-d12fbb94-db7c-4456-820e-d2e0f24c5013.jpg)
 
 ## Payment Page
 Here you choose the mode of payment & place the order.<br>
 
-![payment](https://user-images.githubusercontent.com/68966858/167296334-e9b1e49c-bed2-447a-b2f0-e25d0722d53a.png)
-
+![pay](https://user-images.githubusercontent.com/68966858/184898724-2b68bda1-2080-4174-b7d4-4db54187d0f0.png)
