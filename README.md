@@ -13,7 +13,7 @@ HTML,CSS & JS.
 Our comprised of five members:
 1. Aditya Singh Tomar
 2. Diksha Gauniyla
-3. Mukul Jatav
+3. Mukul Jatav - (Product Page, Product Detail Page)
 4. Shadik Hussain
 5. Sudeep Haldar
 
